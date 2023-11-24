@@ -4,3 +4,6 @@
 [meta]
 template = "default"
 commit-id = "8c30aa23"
+
+[tox]
+use_mxdev = true
