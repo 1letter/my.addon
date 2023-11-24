@@ -20,6 +20,7 @@ setup(
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
     classifiers=[
+        "Development Status :: 2 - Pre-Alpha",
         "Environment :: Web Environment",
         "Framework :: Plone",
         "Framework :: Plone :: Addon",
@@ -53,8 +54,8 @@ setup(
         "setuptools",
         # -*- Extra requirements: -*-
         "z3c.jbot",
-        "plone.api>=1.8.4",
-        "plone.app.dexterity",
+        "plone.base",
+        "Products.GenericSetup",
     ],
     extras_require={
         "test": [
@@ -63,8 +64,12 @@ setup(
             # Remove if your package shall be part of coredev.
             # plone_coredev tests as of 2016-04-01.
             "plone.testing>=5.0.0",
-            "plone.app.contenttypes",
             "plone.app.robotframework[debug]",
+            "plone.api",
+            "plone.app.dexterity",
+            "plone.browserlayer",
+            "plone.restapi",
+            "robotsuite",
         ],
     },
     entry_points="""
