@@ -1,4 +1,4 @@
-from plone.base import INonInstallable
+from plone.base.interfaces.installable import INonInstallable
 from zope.interface import implementer
 
 
