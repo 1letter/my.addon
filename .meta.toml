@@ -3,7 +3,7 @@
 # See the inline comments on how to expand/tweak this configuration file
 [meta]
 template = "default"
-commit-id = "eb03a4c5"
+commit-id = "a6f1679b"
 
 [tox]
 use_mxdev = true
