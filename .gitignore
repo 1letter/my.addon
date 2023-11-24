@@ -46,6 +46,10 @@ var/
 .installed.txt
 
 forest.*
+robot_log.html
+robot_output.html
+robot_report.html
+test_*/
 
 ##
 # Add extra configuration options in .meta.toml:
