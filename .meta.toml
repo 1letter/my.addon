@@ -16,7 +16,7 @@ check_manifest_ignores = """
 extra_lines = """
 forest.*
 robot_log.html
-robot_output.html
+robot_output.xml
 robot_report.html
 test_*/
 """
