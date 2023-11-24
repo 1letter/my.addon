@@ -3,10 +3,7 @@
 # See the inline comments on how to expand/tweak this configuration file
 [meta]
 template = "default"
-commit-id = "9b5401aa"
-
-[tox]
-use_mxdev = true
+commit-id = "8c30aa23"
 
 [pyproject]
 check_manifest_ignores = """
@@ -14,3 +11,11 @@ check_manifest_ignores = """
     "*.pyc",
     "news/*",
 """
+
+[gitignore]
+extra_lines = """
+forest.*
+"""
+
+[tox]
+constraints_file = "https://dist.plone.org/release/6.1-dev/constraints.txt"
