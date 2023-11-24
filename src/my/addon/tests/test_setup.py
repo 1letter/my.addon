@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Setup tests for this package."""
 from my.addon.testing import MY_ADDON_INTEGRATION_TESTING  # noqa: E501
 from plone import api
@@ -40,7 +39,6 @@ class TestSetup(unittest.TestCase):
 
 
 class TestUninstall(unittest.TestCase):
-
     layer = MY_ADDON_INTEGRATION_TESTING
 
     def setUp(self):
