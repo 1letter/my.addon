@@ -3,7 +3,13 @@
 # See the inline comments on how to expand/tweak this configuration file
 [meta]
 template = "default"
-commit-id = "8c30aa23"
+commit-id = "eb03a4c5"
 
 [tox]
 use_mxdev = true
+
+[pyproject]
+check_manifest_ignores = """
+    "*.map.js",
+    "*.pyc",
+"""

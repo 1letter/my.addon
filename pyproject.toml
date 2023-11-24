@@ -138,6 +138,8 @@ ignore = [
     "tox.ini",
     ".flake8",
     "mx.ini",
+    "*.map.js",
+    "*.pyc",
 
 ]
 ##
