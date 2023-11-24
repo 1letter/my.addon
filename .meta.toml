@@ -3,7 +3,7 @@
 # See the inline comments on how to expand/tweak this configuration file
 [meta]
 template = "default"
-commit-id = "a6f1679b"
+commit-id = "9b5401aa"
 
 [tox]
 use_mxdev = true
@@ -12,4 +12,5 @@ use_mxdev = true
 check_manifest_ignores = """
     "*.map.js",
     "*.pyc",
+    "news/*",
 """

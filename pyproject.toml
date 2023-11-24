@@ -140,6 +140,7 @@ ignore = [
     "mx.ini",
     "*.map.js",
     "*.pyc",
+    "news/*",
 
 ]
 ##
