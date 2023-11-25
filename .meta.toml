@@ -20,8 +20,3 @@ robot_output.xml
 robot_report.html
 test_*/
 """
-
-[tox]
-testenv_options = """
-basepython = /usr/bin/python3.11
-"""
