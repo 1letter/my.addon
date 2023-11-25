@@ -1,6 +1,7 @@
 graft src/my
 graft docs
 include *.rst
+include .coveragerc
 exclude tox.ini
 exclude *.txt
 exclude .gitlab-ci.yml

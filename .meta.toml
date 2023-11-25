@@ -1,0 +1,22 @@
+# Generated from:
+# https://github.com/plone/meta/tree/master/config/default
+# See the inline comments on how to expand/tweak this configuration file
+[meta]
+template = "default"
+commit-id = "8c30aa23"
+
+[pyproject]
+check_manifest_ignores = """
+    "*.map.js",
+    "*.pyc",
+    "news/*",
+"""
+
+[gitignore]
+extra_lines = """
+forest.*
+robot_log.html
+robot_output.xml
+robot_report.html
+test_*/
+"""
