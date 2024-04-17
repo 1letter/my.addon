@@ -26,6 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # setup plone
       - name: Setup Plone ${{ matrix.plone-version }} with Python ${{ matrix.python-version }}
         id: setup
         uses: plone/setup-plone@v2.0.0
@@ -33,14 +34,22 @@ jobs:
           python-version: ${{ matrix.python-version }}
           plone-version: ${{ matrix.plone-version }}
 
-      # Install pas.plugins.authomatic with test extras
+      # Install my.addon with test extras
       - name: Install my.addon
         run: |
           pip install ".[test]"
+
       # test
+      # zope-testrunner --auto-color --auto-progress --test-path src
       - name: test
         run: |
-          zope-testrunner --auto-color --auto-progress --test-path src
+          rfbrowser init
+          coverage run --branch --source my.addon zope-testrunner --quiet --all --test-path=src -s my.addon {posargs}
+          coverage report -m --format markdown
+          coverage xml
+          coverage html
+
+      # upload coverage
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.0.1
         with:
