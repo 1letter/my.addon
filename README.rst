@@ -2,8 +2,8 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on PyPI or github. It is a comment.
 
-.. image:: https://github.com/collective/my.addon/actions/workflows/plone-package.yml/badge.svg
-    :target: https://github.com/collective/my.addon/actions/workflows/plone-package.yml
+.. image:: https://github.com/collective/my.addon/actions/workflows/meta.yml/badge.svg
+    :target: https://github.com/collective/my.addon/actions/workflows/meta.yml
 
 .. image:: https://coveralls.io/repos/github/1letter/my.addon/badge.svg?branch=main
     :target: https://coveralls.io/github/1letter/my.addon?branch=main
