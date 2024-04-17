@@ -69,7 +69,7 @@ setup(
             "plone.api>=1.8.4",
             "plone.app.dexterity",
             "plone.base",
-            "plone.browserlayer.utils",
+            "plone.browserlayer",
             "plone.restapi",
             "robotsuite",
         ],
