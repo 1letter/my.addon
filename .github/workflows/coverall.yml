@@ -1,14 +1,16 @@
 # Workflow meant to be used by external repositories
 # that are configured with this `meta` repository
-name: Coverage
+name: Coverall
 on:
-  # allow this workflow to be called
-  # by other workflows from other repositories
-  workflow_call:
-    inputs:
-      os-packages:
-        required: false
-        type: string
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
 
 jobs:
   test:
@@ -43,6 +45,5 @@ jobs:
       - name: Run coverage
         run: |
           tox -q -e coverage >> $GITHUB_STEP_SUMMARY
-
       - name: Coveralls
         uses: coverallsapp/github-action@v2
