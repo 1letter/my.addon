@@ -43,6 +43,7 @@ jobs:
       # zope-testrunner --auto-color --auto-progress --test-path src
       - name: test
         run: |
+          pip install coverage
           rfbrowser init
           coverage run --branch --source my.addon zope-testrunner --quiet --all --test-path=src -s my.addon {posargs}
           coverage report -m --format markdown
