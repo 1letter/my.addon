@@ -30,6 +30,8 @@ jobs:
     uses: plone/meta/.github/workflows/test.yml@main
   coverage:
     uses: 1letter/coveralls-workflow/.github/workflows/coveralls.yml@main
+  codecov:
+    uses: 1letter/coveralls-workflow/.github/workflows/codecov.yml@main
   dependencies:
     uses: plone/meta/.github/workflows/dependencies.yml@main
   release_ready:
