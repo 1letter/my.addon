@@ -54,8 +54,9 @@ setup(
         "setuptools",
         # -*- Extra requirements: -*-
         "z3c.jbot",
-        "plone.api>=1.8.4",
-        "plone.app.dexterity",
+        "Products.CMFPlone",
+        "Products.GenericSetup",
+        "Zope",
     ],
     extras_require={
         "test": [
@@ -64,8 +65,13 @@ setup(
             # Remove if your package shall be part of coredev.
             # plone_coredev tests as of 2016-04-01.
             "plone.testing>=5.0.0",
-            "plone.app.contenttypes",
             "plone.app.robotframework[debug]",
+            "plone.api>=1.8.4",
+            "plone.app.dexterity",
+            "plone.base",
+            "plone.browserlayer.utils",
+            "plone.restapi",
+            "robotsuite",
         ],
     },
     entry_points="""
