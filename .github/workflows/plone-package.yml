@@ -16,14 +16,15 @@ jobs:
       fail-fast: false
       matrix:
         plone-version:
-          - "Plone60"
+          - "6.0.10.1"
+          - "6.1-dev"
         python-version:
           - "3.9"
           - "3.10"
           - "3.11"
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Setup Plone ${{ matrix.plone-version }} with Python ${{ matrix.python-version }}
         id: setup
