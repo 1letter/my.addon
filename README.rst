@@ -5,12 +5,8 @@
 .. image:: https://github.com/collective/my.addon/actions/workflows/plone-package.yml/badge.svg
     :target: https://github.com/collective/my.addon/actions/workflows/plone-package.yml
 
-.. image:: https://coveralls.io/repos/github/collective/my.addon/badge.svg?branch=main
-    :target: https://coveralls.io/github/collective/my.addon?branch=main
-    :alt: Coveralls
-
-.. image:: https://codecov.io/gh/collective/my.addon/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/collective/my.addon
+.. image:: https://coveralls.io/repos/github/1letter/my.addon/badge.svg?branch=main
+    :target: https://coveralls.io/github/1letter/my.addon?branch=main
 
 .. image:: https://img.shields.io/pypi/v/my.addon.svg
     :target: https://pypi.python.org/pypi/my.addon/
