@@ -42,8 +42,12 @@ jobs:
           mxdev -c mx.ini
       - name: Test with tox
         run: |
-          tox -e debug
           tox -e test
+          tox -e coverage
         env:
           PLONE-VERSION: ${{ matrix.plone-version }}
           PYTHON-VERSION: ${{ matrix.python-version }}
+      - if: ${{ matrix.plone-version }} == "6.0-latest" &&  ${{ matrix.python-version }} == "3.11"
+        name: Coverage
+        run: |
+          tox -e coverage
