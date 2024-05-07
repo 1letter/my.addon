@@ -6,9 +6,9 @@ from setuptools import setup
 
 long_description = "\n\n".join(
     [
-        open("README.rst").read(),
-        open("CONTRIBUTORS.rst").read(),
-        open("CHANGES.rst").read(),
+        open("README.md").read(),
+        open("CONTRIBUTORS.md").read(),
+        open("CHANGES.md").read(),
     ]
 )
 
@@ -18,6 +18,7 @@ setup(
     version="1.0a1",
     description="An add-on for Plone",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     # Get more from https://pypi.org/classifiers/
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
