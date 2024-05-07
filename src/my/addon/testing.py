@@ -4,7 +4,7 @@ from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
-from plone.testing import z2
+from plone.testing.zope import WSGI_SERVER_FIXTURE
 
 import my.addon
 
@@ -48,7 +48,7 @@ MY_ADDON_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
         MY_ADDON_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        z2.ZSERVER_FIXTURE,
+        WSGI_SERVER_FIXTURE,
     ),
     name="MyAddonLayer:AcceptanceTesting",
 )
