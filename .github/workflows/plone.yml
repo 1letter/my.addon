@@ -42,7 +42,8 @@ jobs:
           mxdev -c mx.ini
       - name: Test with tox
         run: |
-          tox
+          tox -e debug
+          tox -e test
         env:
           PLONE-VERSION: ${{ matrix.plone-version }}
           PYTHON-VERSION: ${{ matrix.python-version }}
