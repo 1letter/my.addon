@@ -4,3 +4,9 @@
 [meta]
 template = "default"
 commit-id = "1c2155e4"
+
+[gitignore]
+extra_lines = """
+forest.dot
+forest.json
+"""
