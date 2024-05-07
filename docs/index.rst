@@ -1,5 +1,0 @@
-========
-my.addon
-========
-
-User documentation

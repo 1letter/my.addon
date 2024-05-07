@@ -1,9 +1,13 @@
 graft src/my
-graft docs
+
 include *.rst
+include *.md
+include .coveragerc
+
 exclude tox.ini
 exclude *.txt
 exclude .gitlab-ci.yml
-global-exclude *.pyc
-include .coveragerc
 
+recursive-exclude news *
+
+global-exclude *.pyc

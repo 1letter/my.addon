@@ -4,3 +4,21 @@
 [meta]
 template = "default"
 commit-id = "1c2155e4"
+
+[gitignore]
+extra_lines = """
+forest.dot
+forest.json
+"""
+
+[tox]
+use_mxdev = true
+config_lines = """
+[gh-actions]
+python =
+    3.8: py38
+    3.9: py39
+    3.10: py310
+    3.11: py311
+    3.12: py312
+"""
