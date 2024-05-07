@@ -72,7 +72,6 @@ setup(
             "plone.base",
             "plone.browserlayer",
             "plone.restapi",
-            "robotsuite",
         ],
     },
     entry_points="""
