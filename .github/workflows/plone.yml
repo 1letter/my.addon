@@ -15,8 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        plone-version:
-          - "Plone60"
+        plone-version: ["6.0-latest", "6.1-latest"]
         python-version: ["3.9", "3.10", "3.11", "3.12"]
 
     steps:
