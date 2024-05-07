@@ -10,14 +10,15 @@ on:
     branches: [main]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  test:
+    name: Tests report
+    runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
         plone-version: ["6.0-latest", "6.1-latest"]
         python-version: ["3.9", "3.10", "3.11", "3.12"]
-
+        os: ["ubuntu-latest"]
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
