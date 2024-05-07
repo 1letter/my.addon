@@ -10,3 +10,6 @@ extra_lines = """
 forest.dot
 forest.json
 """
+
+[tox]
+use_mxdev = true
