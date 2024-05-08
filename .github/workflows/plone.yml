@@ -18,7 +18,7 @@ jobs:
       matrix:
         plone-version: ["6.0-latest", "6.1-latest"]
         python-version: ["3.9", "3.10", "3.11", "3.12"]
-        os: ["ubuntu-latest", "ubuntu-20.04"]
+        os: ["ubuntu-24.04", "ubuntu-22.04", "ubuntu-20.04"]
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
