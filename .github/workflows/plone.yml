@@ -43,7 +43,7 @@ jobs:
         run: sudo npx playwright install-deps       
       - name: prepeare constraints
         run: |
-          echo "-c https://dist.plone.org/release/${{ matrix.plone-version }}/constraints.txt" >> constraints.txt
+          echo "-c https://dist.plone.org/release/${{ matrix.plone-version }}/constraints.txt" > constraints.txt
       - name: Initialize tox
         if: contains(matrix.os, 'ubuntu')
         run: |
