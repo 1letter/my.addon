@@ -62,14 +62,14 @@ jobs:
 # py_versions = "['3.12', '3.11']"
 ##
 
-plonetests:
-  - name: Run a Testmatrix for Plone and Python Versions
-    uses: collective/workflow-plonematrix/.github/workflows/plonetest-matrix.yml@main
-codecov:
-  - name: Upload coverage reports to Codecov
-    uses: codecov/codecov-action@v4.0.1
-    with:
-      token: ${{ secrets.CODECOV_TOKEN }}
+  plonetests:
+    - name: Run a Testmatrix for Plone and Python Versions
+      uses: collective/workflow-plonematrix/.github/workflows/plonetest-matrix.yml@main
+  codecov:
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v4.0.1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
 
 ##
 # Specify additional jobs in .meta.toml:
