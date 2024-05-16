@@ -17,18 +17,14 @@ use_mxdev = true
 [github]
 jobs = [
     "qa",
-    "coverage",
     "dependencies",
     "release_ready",
     "circular",
     ]
 extra_lines = """
   plonetests:
-    - name: Run a Testmatrix for Plone and Python Versions
-      uses: collective/workflow-plonematrix/.github/workflows/plonetest-matrix.yml@main
+    uses: collective/workflow-plonematrix/.github/workflows/plonetest-matrix.yml@main
   codecov:
-    - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v4.0.1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
+    uses: collective/workflow-plonematrix/.github/workflows/codecov.yml@main
+
 """
