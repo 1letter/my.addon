@@ -64,6 +64,8 @@ jobs:
     uses: collective/workflow-plonematrix/.github/workflows/plonetest-matrix.yml@main
   codecov:
     uses: collective/workflow-plonematrix/.github/workflows/codecov.yml@main
+    secrets:
+       token: ${{ secrets.CODECOV_TOKEN }}
 
 
 ##
