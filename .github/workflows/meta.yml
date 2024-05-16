@@ -65,7 +65,7 @@ jobs:
   codecov:
     uses: collective/workflow-plonematrix/.github/workflows/codecov.yml@dev
     secrets:
-       token: ${{ secrets.CODECOV_TOKEN }}
+       codecov-token: ${{ secrets.CODECOV_TOKEN }}
 
 
 ##
