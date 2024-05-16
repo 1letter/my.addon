@@ -25,7 +25,7 @@ extra_lines = """
   plonetests:
     uses: collective/workflow-plonematrix/.github/workflows/plonetest-matrix.yml@main
   codecov:
-    uses: collective/workflow-plonematrix/.github/workflows/codecov.yml@main
+    uses: collective/workflow-plonematrix/.github/workflows/codecov.yml@dev
     secrets:
        token: ${{ secrets.CODECOV_TOKEN }}
 
